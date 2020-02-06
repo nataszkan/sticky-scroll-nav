@@ -1,0 +1,22 @@
+/** poor man's reset (margin, padding, font-size, border) **/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: lavenderblush;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: padding;
+}
+
+h1 {
+    font-weight: 300;
+}
