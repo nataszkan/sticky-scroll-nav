@@ -68,3 +68,10 @@ section {
     color: var(--text-color);
     background-color: var(--nav-links-hover-bg);
 }
+
+/** sticky nav **/
+main > nav {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
