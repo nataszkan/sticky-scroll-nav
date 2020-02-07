@@ -2,11 +2,12 @@
     --main-bg-color: #e6ddde;
     --text-color: #654a4e;
     --text-color-light: #916a70;
+    --text-color-xlight: #BC8F8F;
     --nav-links-color: #808080;
     --nav-links-hover-bg: #f5f1f2;
 }
 
-/** poor man's reset (margin, padding, font-size, border) **/
+/* poor man's reset (margin, padding, font-size, border) */
 * {
     box-sizing: border-box;
 }
@@ -34,8 +35,8 @@ h1 {
     font-weight: 300;
 }
 
-/** page layout **/
-main {
+/* page layout */
+.container {
     display: grid;
     grid-template-columns: 1fr 15em;
     max-width: 100em;
@@ -48,9 +49,8 @@ section {
     margin-bottom: 20rem;
 }
 
-/** page styles **/
+/* page styles */
 .section-nav {
-    margin-top: 2rem;
     padding-left: 0;
     border-left: 1px solid var(--text-color);
 }
@@ -59,19 +59,24 @@ section {
     text-decoration: none;
     display: block;
     padding: 0.125rem 0;
-    color: var(--text-color-light);
+    color: var(--text-color-xlight);
     transition: all 50ms ease-in-out;
 }
 
 .section-nav a:hover,
 .section-nav a:focus {
     color: var(--text-color);
-    background-color: var(--nav-links-hover-bg);
 }
 
-/** sticky nav **/
+/* sticky nav */
 main > nav {
     position: sticky;
     top: 2rem;
     align-self: start;
+}
+
+/* scroll-spy active styles */
+.section-nav li.active > a {
+    color: var(--text-color);
+    font-weight: 500;
 }
